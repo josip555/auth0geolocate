@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Map</title>
+</head>
+
+<body>
+
+  <div class="row">
+    <div class="column left" style="background-color:#aaa;">
+      <div id="map"></div>
+    </div>
+    <div class="column right" style="background-color:#bbb;">
+      <h2 id="sidebar_title">Dopustite pristup vašoj lokaciji</h2>
+      <p id="sidebar_comment">Trenutno vaša lokacija nije dostupna. Kako bi se na karti prikazala vaša trenutna lokacija, provjerite podržava li preglednik geolociranje te u pregledniku dopustite da ova stranica pristupa vašoj lokaciji.</p>
+      <p id="sidebar_comment2"></p>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>
