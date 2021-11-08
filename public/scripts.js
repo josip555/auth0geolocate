@@ -46,6 +46,8 @@ if ('geolocation' in navigator) {
             document.getElementById('sidebar_title').textContent = `Dobrodošli ${response.nickname}!`;
             document.getElementById('sidebar_comment').textContent = `Vaše koordinate: ${latLng}`;
             document.getElementById('sidebar_comment2').textContent = `Na karti su također označene lokacije do 5 zadnjih korisnika(uključujući vas) i vrijeme kad su bili prijavljeni. Stisnite na pokazivač kako bi vidjeli detalje korisnika(username, koordinate, datum i vrijeme prijave).`
+			document.getElementById('link').textContent = "Odjavi se";
+            document.getElementById('link').setAttribute("href", "logout");
 
             let mArray = [];
             for (const e of response.userLocations) {
